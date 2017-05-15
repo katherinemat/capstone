@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@*points to app component. fires off server-side prerendering to quickly launch content*@
+<app asp-prerender-module="ClientApp/dist/main-server">Loading...</app>
+
+<script src="~/dist/vendor.js" asp-append-version="true"></script>
+@section scripts {
+    @*launches minified client js*@
+    <script src="~/dist/main-client.js" asp-append-version="true"></script>
+}
