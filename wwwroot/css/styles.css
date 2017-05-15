@@ -1,0 +1,8 @@
+﻿body {
+}
+
+.tile {
+    background-color: hotpink;
+    height: 400px;
+    width: 40%;
+}
