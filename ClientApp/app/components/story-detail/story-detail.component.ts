@@ -4,10 +4,10 @@ import { RequestOptions, Request, RequestMethod } from '@angular/http';
 
 
 @Component({
-    selector: 'shared-header',
-    templateUrl: './header.component.html'
+    selector: 'story-detail',
+    templateUrl: './story-detail.component.html'
 })
-export class HeaderComponent implements OnInit {
+export class StoryDetailComponent implements OnInit {
     public user: string;
 
     ngOnInit() {
