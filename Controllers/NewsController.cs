@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using capstone.Models;
 
 namespace capstone.Controllers
 {
@@ -37,19 +36,5 @@ namespace capstone.Controllers
             }
             return new ObjectResult(new StoryDetail { Story = story });
         }
-    }
-
-    public class Story
-    {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public string Date { get; set; }
-        public string Content { get; set; }
-    }
-
-    public class StoryDetail
-    {
-        public Story Story { get; set; }
     }
 }
