@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/Shared/header/header.component';
 import { StoryDetailComponent } from './components/story-detail/story-detail.component';
 import { StorySummaryComponent } from './components/story-summary/story-summary.component';
+import { StoryService } from './components/Shared/story.service';
 
 @NgModule({
     bootstrap: [ AppComponent ],
@@ -24,7 +25,8 @@ import { StorySummaryComponent } from './components/story-summary/story-summary.
             { path: 'detail/:id', component: StoryDetailComponent },
             { path: '**', redirectTo: 'home' }
         ])
-    ]
+    ],
+    providers: [ StoryService ]
 })
 export class AppModule {
 }
