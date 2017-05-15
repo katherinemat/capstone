@@ -5,6 +5,7 @@ import { AppComponent } from './components/app/app.component'
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/Shared/header/header.component';
 import { StoryDetailComponent } from './components/story-detail/story-detail.component';
+import { StorySummaryComponent } from './components/story-summary/story-summary.component';
 
 @NgModule({
     bootstrap: [ AppComponent ],
@@ -12,7 +13,8 @@ import { StoryDetailComponent } from './components/story-detail/story-detail.com
         AppComponent,
         HomeComponent,
         HeaderComponent,
-        StoryDetailComponent
+        StoryDetailComponent,
+        StorySummaryComponent
     ],
     imports: [
         UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
